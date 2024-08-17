@@ -50,3 +50,27 @@ To use the SQL scripts:
 
 1. **Clone the Repository**:
    git clone https://github.com/muktanpromish/Global-COVID-19-Tracking-Queries.git
+
+
+## Key Learnings from Global COVID-19 Tracking Queries
+
+1. **Advanced SQL Querying**:
+   - Master data aggregation and summarization with functions like `SUM()` and `MAX()`.
+   - Calculate percentages and handle NULL values.
+
+2. **Data Transformation**:
+   - Use Common Table Expressions (CTEs) and window functions for complex queries and cumulative metrics.
+   - Convert data types for accurate calculations.
+
+3. **Data Integration**:
+   - Perform JOIN operations to combine data from multiple tables.
+   - Synchronize and manage related data effectively.
+
+4. **Views and Temporary Tables**:
+   - Create and utilize SQL views to simplify complex queries.
+   - Use temporary tables for intermediate results and performance optimization.
+
+5. **Real-World Data Analysis**:
+   - Analyze COVID-19 data, interpret trends, and derive actionable insights.
+   - Handle and validate real-world datasets with varying data types.
+
