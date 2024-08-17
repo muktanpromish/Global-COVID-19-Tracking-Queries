@@ -49,7 +49,7 @@ The COVID-19 data used for these analyses is sourced from [Our World in Data](ht
 To use the SQL scripts:
 
 1. **Clone the Repository**:
-   git clone https://github.com/muktanpromish/Global-COVID-19-Tracking-Queries.git
+   git clone https://github.com/muktanpromish/SQL_Global-COVID-19-Tracking-Queries.git
 
 
 ## Key Learnings from Global COVID-19 Tracking Queries
