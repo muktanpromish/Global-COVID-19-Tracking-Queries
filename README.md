@@ -45,11 +45,25 @@ The COVID-19 data used for these analyses is sourced from [Our World in Data](ht
 
 - **Database**: SQL Server
 
-## Getting Started
-To use the SQL scripts:
+## Datasets
 
-1. **Clone the Repository**:
-   git clone https://github.com/muktanpromish/SQL_Global-COVID-19-Tracking-Queries.git
+The dataset used for this project is too large to upload directly to GitHub. Instead, it is hosted on 
+[Google Drive](https://drive.google.com/file/d/152Z6L8jweM9B-KSfM9aQIVh3PibmE6hK/view?usp=drive_link)).
+[Google Drive](https://drive.google.com/file/d/1WPEXjkFe8LYmyIapuRYQrAJDjSol8boZ/view?usp=drive_link)).
+
+### Instructions
+
+1. **Download the Dataset**:
+   - Click the link above to download the dataset from above link.
+
+2. **Load the Dataset into SQL Server**:
+   - Follow the instructions provided in the repository to load the data into your SQL Server or other data tools.
+
+3. **Run the Queries**:
+   - Execute the SQL queries included in this repository to analyze the data.
+
+If you encounter any issues or need further assistance, please refer to the documentation or contact the repository maintainer.
+
 
 
 ## Key Learnings from Global COVID-19 Tracking Queries
