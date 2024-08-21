@@ -5,7 +5,7 @@ SQL queries and views for analyzing COVID-19 vaccination data, including scripts
 # COVID-19 Vaccination Insights
 
 This repository contains SQL queries and views designed for analyzing COVID-19 vaccination data. The data is sourced from [Our World in Data](https://ourworldindata.org/covid-cases). The queries and analyses are performed using SQL Server.
-## Questions Answered
+## Questions Answered < a href ="https://github.com/muktanpromish/SQL_Global-COVID-19-Tracking-Queries/blob/main/covid19_sqlcmd.sql" target="_blank">View SQL queries </a>
 
 1. **What are the COVID-19 case and death statistics?**
    - Retrieves all records from the `CovidDeaths` and `CovidVaccinations` tables.
