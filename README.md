@@ -33,6 +33,20 @@ This repository contains SQL queries and views designed for analyzing COVID-19 v
 
 9. **What is the vaccination percentage of the population over time?**
    - Uses a Common Table Expression (CTE) to calculate and track vaccination percentages.
+   - --use CTE (COMMON TABLE EXPRESSION)
+WITH PopVac AS (
+    SELECT dea.continent,dea.[location],dea.population,dea.[date],CONVERT(int, vac.new_vaccinations) AS new_vaccinations,
+        SUM(CONVERT(int, vac.new_vaccinations)) OVER (PARTITION BY dea.location ORDER BY dea.date) AS RollingPeopleVaccinated
+    FROM PortfolioProject1..CovidDeaths dea
+    JOIN PortfolioProject1..CovidVaccinations vac 
+        ON dea.[location] = vac.[location]
+        AND dea.[date] = vac.[date]
+    WHERE dea.continent IS NOT NULL
+)
+SELECT continent,location,date,population,new_vaccinations,RollingPeopleVaccinated,
+    CAST((RollingPeopleVaccinated * 1.0 / population) * 100 AS DECIMAL(10, 2)) AS VaccinationPercentage
+FROM PopVac
+ORDER BY continent, location, date;
 
 10. **How can we create and utilize temporary tables to analyze vaccination data?**
     - Demonstrates creating and using a temporary table to analyze vaccination data.
